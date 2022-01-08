@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --Pale_blue: hsl(225, 100%, 94%);
+  --Bright_blue: hsl(245, 75%, 52%);
+  --Very_pale_blue: hsl(225, 100%, 98%);
+  --Desaturated_blue: hsl(224, 23%, 55%);
+  --Dark_blue: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  /* font-weight: 500, 700, 900; */
+
+  background-color: var(--Pale_blue);
+}
+
+p {
+  font-size: 16px;
+}
+
+#container {
+  background: url("img/pattern-background-desktop.svg") no-repeat;
+  background-repeat: repeat-x;
+
+  /* background-color: grey; */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: scroll;
+}
+
+#content {
+  max-width: 335px;
+  background-color: white;
+
+  border-radius: 20px;
+  margin: auto 20px;
+}
+
+#header img {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+#bottom {
+  padding: 30px;
+}
+
+#bottom h1 {
+  color: var(--Dark_blue);
+  font-weight: 900;
+  text-align: center;
+  font-size: 22px;
+}
+
+#bottom #explain {
+  text-align: center;
+  font-weight: 500;
+  font-size: 13px;
+  color: var(--Desaturated_blue);
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+#annual {
+  display: grid;
+  grid-template-columns: 70px auto auto;
+  grid-template-rows: auto;
+  height: 70px;
+  padding: 10px;
+  background-color: var(--Very_pale_blue);
+
+  align-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin: 20px auto;
+}
+
+#annualimg img {
+  height: 100%;
+  vertical-align: middle;
+}
+
+#annual a {
+  text-align: right;
+  color: var(--Bright_blue);
+  font-weight: 500;
+}
+
+#annualplan h4 {
+  color: var(--Dark_blue);
+  font-weight: 700;
+}
+
+#annualplan p {
+  color: var(--Desaturated_blue);
+  font-size: 13px;
+}
+
+#btn {
+  display: block;
+  width: 100%;
+  line-height: 50px;
+  height: 50px;
+  color: white;
+  background-color: var(--Bright_blue);
+  border: 0px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+}
+
+#btn:hover {
+  background-color: var(--Dark_blue);
+}
+
+#cancelbtn {
+  color: var(--Desaturated_blue);
+  font-weight: 600;
+  font-size: 15px;
+  display: block;
+  margin: 15px auto 5px auto;
+  text-align: center;
+  text-decoration: none;
+}

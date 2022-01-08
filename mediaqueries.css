@@ -1,0 +1,27 @@
+@media screen and (max-width: 285px) {
+  #annual {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    height: auto;
+    padding: 10px;
+  }
+
+  #annualimg {
+    display: flex;
+    justify-content: center;
+  }
+  #annualimg img {
+    height: 100%;
+  }
+
+  #annual a {
+    text-align: center;
+  }
+
+  #annualplan h4,
+  p {
+    text-align: center;
+    margin: 5px;
+  }
+}
